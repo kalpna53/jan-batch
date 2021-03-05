@@ -1,0 +1,114 @@
+<html>
+
+<head>
+	<style>
+	body {
+		background-image: url('image/appoinment1.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	
+	table {
+		margin-top: 10%;
+		margin-bottom: 10%;
+		/* margin-right: 50%;
+                margin-left: 40%; */
+		color: white;
+		box-shadow: 10px 10px 5px rgb(125, 125, 128);
+		background-color: black;
+		opacity: 0.6;
+	}
+	
+	button {
+		background-color: rgb(231, 12, 158);
+		border: none;
+		color: white;
+		padding: 20px 40px;
+		text-decoration: none;
+		/* margin: 4px 2px; */
+		cursor: pointer;
+	}
+	
+	input[type=text],
+	input[type=password],
+	input[type=email],
+	input[type=date],
+	input[type=tel],
+	input[type=time],
+	select {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 16px 0;
+		box-sizing: border-box;
+	}
+	</style>
+</head>
+
+<body>
+	<form>
+		<table cellspacing="0" cellpadding="10" width="40%" height="70%" align="center">
+			<tr>
+				<td colspan="2">
+					<h2 align="center">HEALTH APPOINMENT FORM</h2> </td>
+			</tr>
+			<tr>
+				<td>
+					<label for="fname">Full Name:</label>
+					<input type="text" id="fname" name="fname" placeholder="Full name" required> </td>
+				<td>
+					<label for="Date">Select Date:</label>
+					<input type="date" id="Date" name="Date"> </td>
+			</tr>
+			<tr>
+				<td>
+					<label for="phone">phone number:</label>
+					<input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1234567890"> </td>
+				<td>
+					<label for="dept">Department:</label>
+					<select name="dept" id="edu">
+						<option value="dept0">Select</option>
+						<option value="dept1">Cardiology (Heart Care)</option>
+						<option value="dept2">Oncology (Cancer Care)</option>
+						<option value="dept3">Neurology</option>
+						<option value="dept4">Urology</option>
+						<option value="dept5">Surgical Gastroenterology</option>
+						<option value="dept6">Medical Gastroenterology</option>
+						<option value="dept7">Obstetrics and Gynaecology.</option>
+						<option value="dept8">Bone Marrow Transplant.</option>
+						<option value="dept9">Emergency department</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Email"> </td>
+				<td>
+					<label for="gender">Gender:</label>
+					<select name="gender">
+						<option value="gender1">Select</option>
+						<option value="gender2">Female</option>
+						<option value="gender3">Male</option>
+						<option value="gender4">others</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="Symptoms">Symptoms:</label>
+					<input type="text" id="Symptoms" name="Symptoms" placeholder="Symptoms" required> </td>
+				<td>
+					<label for="Time">Select Time:</label>
+					<input type="time" id="Time" name="Time" required> </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<button type="submit" value="Submit">Make an Appoinment</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

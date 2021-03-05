@@ -1,0 +1,158 @@
+<html>
+
+<head>
+	<style>
+	input[type=text],
+	input[type=password],
+	input[type=email],
+	input[type=tel],
+	select {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+	}
+	
+	input[type=submit] {
+		background-color: #5a0af0;
+		border: none;
+		color: white;
+		padding: 16px 32px;
+		text-decoration: none;
+		/* margin: 4px 2px; */
+		cursor: pointer;
+	}
+	
+	table {
+		margin-top: 10%;
+		margin-bottom: 10%;
+		/* margin-right: 50%;
+                margin-left: 40%; */
+		box-shadow: 10px 10px 5px rgb(96, 96, 250);
+	}
+	
+	.tcorners1,
+	input[type=submit] {
+		border-radius: 25px;
+	}
+	
+	.label1 {
+		display: block;
+	}
+	
+	textarea {
+		display: block;
+	}
+	</style>
+</head>
+
+<body>
+	<form>
+		<table cellspacing="0" cellpadding="5" bgcolor="#F5F6F9" align="center" width="30%" height="60%">
+			<tr>
+				<td align="center" colspan="2">
+					<h1>Shipping Address</h1> </td>
+			</tr>
+			<tr>
+				<td>
+					<label for="name">Full Name</label>
+					<input type="text" id="yname" name="yname" placeholder="Name"> </td>
+				<td>
+					<label for="City">City</label>
+					<input type="text" id="City" name="City" placeholder="City"> </td>
+				</td>
+			</tr>
+			<tr> </tr>
+			<tr>
+				<td>
+					<label for="district">District</label>
+					<input type="text" id="district" name="district" placeholder="district"> </td>
+				</td>
+				<td>
+					<label for="card">Select an card option:</label>
+					<select name="card">
+						<option value="c1">--Select--</option>
+						<option value="c2">UTTAR PRADEDH</option>
+						<option value="c3">JHARKHAND</option>
+						<option value="c4">BIHAR</option>
+						<option value="c5">JAMMU & KASHMIR</option>
+						<option value="c5">CHATTISHGARH</option>
+						<option value="c5">HARIYANA</option>
+						<option value="c5">UTTRAKHAND</option>
+						<option value="c5">BANGLORE</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="pin">Pin code:</label>
+					<input type="text" id="pin" name="pin" pattern="[0-9]{6}"> </td>
+				<td>
+					<label for="phone">phone number:</label>
+					<input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1234567890"> </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="address1" class="lable1">Complete Address</label>
+					<textarea name="address1" id="address1" rows="6" cols="60"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="Billing">Billing address</label>
+					<input type="checkbox" name="Billing" id="Billing">
+					<label for="Billing">same as shipping address</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="name">Full Name</label>
+					<input type="text" id="yname" name="yname" placeholder="Name"> </td>
+				<td>
+					<label for="City">City</label>
+					<input type="text" id="City" name="City" placeholder="City"> </td>
+			</tr>
+			<tr> </tr>
+			<tr>
+				<td>
+					<label for="district">District</label>
+					<input type="text" id="district" name="district" placeholder="district"> </td>
+				</td>
+				<td>
+					<label for="card">Select an card option:</label>
+					<select name="card">
+						<option value="c1">--Select--</option>
+						<option value="c2">UTTAR PRADEDH</option>
+						<option value="c3">JHARKHAND</option>
+						<option value="c4">BIHAR</option>
+						<option value="c5">JAMMU & KASHMIR</option>
+						<option value="c5">CHATTISHGARH</option>
+						<option value="c5">HARIYANA</option>
+						<option value="c5">UTTRAKHAND</option>
+						<option value="c5">BANGLORE</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="pin">Pin code:</label>
+					<input type="text" id="pin" name="pin" pattern="[0-9]{6}"> </td>
+				<td>
+					<label for="phone">phone number:</label>
+					<input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1234567890"> </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="address1">Complete Address</label>
+					<textarea name="address1" id="address1" rows="6" cols="60"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2">
+					<input type="submit"> </td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

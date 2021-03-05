@@ -1,0 +1,64 @@
+<html>
+
+<head>
+	<style>
+	body {
+		background-image: linear-gradient(45deg, rgb(209, 115, 178), rgb(143, 194, 238), rgb(187, 91, 216));
+	}
+	
+	table {
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+	
+	input[type=text],
+	input[type=password] {
+		width: 80%;
+		padding: 12px 20px;
+		margin-left: 10%;
+		height: 80%;
+	}
+	
+	input[type="checkbox"] {
+		margin-left: 40%;
+	}
+	
+	.tcorners1,
+	input[type=text],
+	input[type=password] {
+		border-radius: 25px;
+	}
+	</style>
+</head>
+
+<body>
+	<form method="POST">
+		<table cellspacing="0" cellpadding="5" bgcolor="#F5F6F9" align="center" width="30%" height="60%" class="tcorners1">
+			<tr>
+				<td align="center"> <img src="image/login.png" alt="profile" width="250px" height="110px"> </td>
+			</tr>
+			<tr>
+				<td>
+					<h2 align="center">LOGIN FORM</h2> </td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="uname" name="uname" placeholder="User Name" maxlength="4" size="4"> </td>
+			</tr>
+			<tr>
+				<td>
+					<input type="password" id="Password" name="Password" placeholder="Password"> </td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="Checkbox" name="Checkbox" value="agree">&nbsp; &nbsp;Remember me </td>
+			</tr>
+			<tr>
+				<td align="center">
+					<input type="image" src="image/login1.png" alt="Submit" width="200" height="100"> </td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

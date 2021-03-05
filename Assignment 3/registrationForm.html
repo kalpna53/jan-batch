@@ -1,0 +1,98 @@
+<html>
+
+<head>
+	<style>
+	input[type=text],
+	input[type=password],
+	input[type=email],
+	input[type=date],
+	select {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+	}
+	
+	input[type=submit] {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 32px 64px;
+		text-decoration: none;
+		/* margin: 4px 2px; */
+		cursor: pointer;
+	}
+	</style>
+</head>
+
+<body bgcolor="#B6B9B9">
+	<h2 align="center">STUDENT REGISTRATION FORM</h2>
+	<form method="POST">
+		<table cellspacing="0" cellpadding="10" bgcolor="#F3F9FA " width="50%" height="70%" align="center">
+			<tr>
+				<td>
+					<label for="fname">First Name:</label>
+					<input type="text" id="fname" name="fname" placeholder="First name"> </td>
+				<td>
+					<label for="lname">Last Name:</label>
+					<input type="text" id="lname" name="lname" placeholder="Last name"> </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Email"> </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="password">Password:</label>
+					<input type="password" id="Password" name="Password" placeholder="Password"> </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="password">Confirm Password:</label>
+					<input type="password" id="Password" name="Password" placeholder="Confirm password"> </td>
+			</tr>
+			<tr>
+				<td>
+					<label for="DOB">DOB:</label>
+					<input type="date" id="DOB" name="DOB"> </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="gender">Gender:</label>
+					<br>
+					<input type="radio" id="male" name="gender" value="male">
+					<label for="male">Male</label>
+					<br>
+					<input type="radio" id="female" name="gender" value="female">
+					<label for="female">Female</label>
+					<br>
+					<input type="radio" id="other" name="gender" value="other">
+					<label for="other">Other</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="subject">Subject:</label>
+					<select name="sub" id="sub">
+						<option value="sub0">Select subject</option>
+						<option value="sub1">Physics</option>
+						<option value="sub2">Chemistry</option>
+						<option value="sub3">Maths</option>
+						<option value="sub4">Biology</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="checkbox" id="Checkbox" name="Checkbox" value="agree">&nbsp; &nbsp;I accept the terms of use and Privacy Policy </td>
+			</tr>
+			<tr>
+				<td align="center" colspan="4">
+					<input type="submit"> </td>
+			</tr>
+		</table>
+		<hr> </form>
+</body>
+
+</html>

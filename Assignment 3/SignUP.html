@@ -1,0 +1,90 @@
+<html>
+
+<head>
+	<style>
+	input[type=text],
+	input[type=password],
+	input[type=email] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+	}
+	
+	input[type=submit] {
+		background-color: #5a0af0;
+		border: none;
+		color: white;
+		padding: 16px 32px;
+		text-decoration: none;
+		/* margin: 4px 2px; */
+		cursor: pointer;
+	}
+	
+	table {
+		margin-top: 10%;
+		margin-bottom: 10%;
+		/* margin-right: 50%;
+                margin-left: 40%; */
+		box-shadow: 10px 10px 5px rgb(96, 96, 250);
+	}
+	
+	.tcorners1,
+	input[type=submit] {
+		border-radius: 25px;
+	}
+	</style>
+</head>
+
+<body bgcolor="#3F5DF0">
+	<form method="POST">
+		<table cellspacing="0" cellpadding="10" bgcolor="#F3F9FA " width="30%" height="60%" align="center" class="tcorners1">
+			<tr>
+				<td colspan="2">
+					<h2 align="center">Sign Up Form</h2> </tr>
+			<tr>
+				<td colspan="2" style="color:rgb(152, 152, 158);" align="center">
+					<p>Please fill this form to create an account</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<hr style="color:gray;">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="fname">First Name:</label>
+					<input type="text" id="fname" name="fname" placeholder="First name"> </td>
+				<td>
+					<label for="lname">Last Name:</label>
+					<input type="text" id="lname" name="lname" placeholder="Last name"> </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Email"> </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="password">Password:</label>
+					<input type="password" id="Password" name="Password" placeholder="Password"> </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="password">Confirm Password:</label>
+					<input type="password" id="Password" name="Password" placeholder="Confirm password"> </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="checkbox" id="Checkbox" name="Checkbox" value="agree">&nbsp; &nbsp;I accept the terms of use and Privacy Policy </td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2">
+					<input type="submit"> </td>
+			</tr>
+		</table>
+		<hr> </form>
+</body>
+
+</html>
